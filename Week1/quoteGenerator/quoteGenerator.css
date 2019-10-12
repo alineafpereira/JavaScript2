@@ -1,0 +1,55 @@
+body {
+    background-color: #5a8895;
+}
+
+.quoteSpace{
+    width: 70%;
+    height: 400px;
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 120px;
+}
+
+.quoteBox {
+    color: #5a8895;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 30px;
+    line-height: 1.5em;
+    margin-right: 40px;
+    width: 80%;
+    height: 60px;
+    float: right;
+    padding-top: 50px;
+     
+}
+
+.authorBox{
+    color: #5a8895;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 20px;
+    float: right;
+    margin-right: 50px;
+    padding-top: 50px;
+    height: 30px;
+}
+
+.quoteMark{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    padding-top: 80px;
+
+}
+
+.button{
+    width: 20%;
+    height: 40px;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18px;
+    border: 1px solid white;
+    color: white;
+    background-color: #5a8895;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
