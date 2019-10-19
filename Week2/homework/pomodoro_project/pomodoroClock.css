@@ -1,0 +1,50 @@
+body {
+    background-color: pink;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    margin-top: 70px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+#timerBox {
+    border: 3px solid grey;
+    height: 550px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10%;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#sessionCounting {
+    border: 3px solid grey;
+    height: 200px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10%;
+    margin-top: 80px;
+}
+
+#play, #pause{
+    height: 42px;
+    width: 50px;
+}
+
+#less, #more{
+    height: 42px;
+    width: 60px;
+    font-size: 20px;
+}
+
+#timeLength{
+    height: 50px;
+    width: 90px;
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 10px;
+}
