@@ -1,0 +1,33 @@
+body {
+    background-color: orange;
+}
+
+#tipContainer{
+    width: 50%;
+    height: 600px;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-top: 30px; 
+}
+
+.text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+#tipBox{
+    width: 80%;
+    margin: 0 auto;
+}
+
+label{
+    font-size: 20px;
+}
+
+#btn{
+    margin-top: 20px;
+    font-size: 13px;
+
+}
