@@ -1,33 +1,50 @@
+"use strict"
+
 const defaultTime = document.getElementById("timeLength");
-let minutesDefault = 25;
-defaultTime.textContent = minutesDefault + ":" + "00";
-let buttonLess = document.getElementById('less');
-let buttonMore = document.getElementById('more');
-let count = parseInt(minutesDefault);
+const decreaseNumber = document.getElementById('less');
+const increaseNumber = document.getElementById('more');
+const buttonPlay = document.getElementById('play');
+const timer = document.getElementById('timeRunning');
+const pauseButton = document.getElementById('pause')
 
-buttonLess.addEventListener("click", () => {
-    if (count > 0){
-        count -= 1;  
-        defaultTime.textContent = count + ":" + "00";
+
+
+decreaseNumber.onclick = function() {
+    if (defaultTime.value > 0){
+        defaultTime.value = parseInt(defaultTime.value) -1
     }
+ }
+ increaseNumber.onclick = function() {
+    defaultTime.value = parseInt(defaultTime.value) + 1
+ }
+
+
+buttonPlay.addEventListener("click", () => {
+    let s = defaultTime.value * 60;
+    const countDown = setInterval(timeIsRunning,1000);
+    function timeIsRunning () {
+        s-- ;
+        let min = Math.floor(s / 60);
+        let sec = s % 60; 
+        timer.innerHTML = min + ":" +sec
+    };
+    pauseButton.addEventListener("click", () => {
+        clearInterval(countDown);
+    })
 })
 
-buttonMore.addEventListener("click", () => {
-    if (count > 0){
-        count += 1;  
-        defaultTime.textContent = count + ":" + "00";
-    }
-})
 
-let timeIsRunning = document.getElementById('timeRunning');
 
-/* Sander and Wim, 
-I didn't finish this project yet but posted anyway along with the other 
-exercises that are already done, so you guys can take a look before we get to close from the deadline.
-I'll keep working on this and will update when it's ready.
-I'm sorry for the inconvenience.
+
+
+
+
+
+
+
+
+
+
+
+/*
 */
-
-
-
-
